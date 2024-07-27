@@ -24,8 +24,8 @@ let perPageCount = 6;
 let offset = 1;
 let category = "";
 async function fetchData(api,limit, category){
-    let reponse = await fetch(`${api}/products${category}?limit=${limit}`);
-    reponse
+    let response = await fetch(`${api}/products${category}?limit=${limit}`);
+    response
         .json()
         .then(res => createCard(res))
         .catch(err => console.log(err))

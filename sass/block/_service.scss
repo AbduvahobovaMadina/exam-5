@@ -1,10 +1,15 @@
 .service{
     margin-top: 50px;
     align-items: center;
+    margin-bottom: 50px;
     &__wrapper{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        @media (max-width:700px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__card{
         align-items: center;
@@ -17,18 +22,22 @@
             height: 80px;
         }
     }
+    
 }
 
 
 
 .card{
-    width: 300px;
+    width: 33%;
     font-family: sans-serif;
     display: flex;
     padding-bottom: 30px;
     flex-direction: column;
     gap: 10px;
     border-radius: 5px;
+    @media (max-width:700px) {
+        width: 100%;
+    }
     .buy{
         background: greenyellow;
         width: 100px;
@@ -82,6 +91,7 @@
             }
         }
         button{
+            width: 100%;
             background: black;
             height: 38px;
             color: #fff;

@@ -3,6 +3,10 @@
     .wrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @media (max-width:700px) {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
     }
     
 }
@@ -127,8 +131,7 @@
     }
 }
 .seemore{
-    margin-left: 33%;
-    background: orange;
+    background: red;
     border: none;
     border-radius: 7px;
     color: white;
@@ -159,7 +162,7 @@
   .collection li{
     width: 200px;
     padding: 7px;
-    border: 1px solid #0002;
+    // border: 1px solid #0002;
     border-radius: 6px;
   }
   .item{
@@ -167,7 +170,7 @@
     transition: .3s;
   }
   .item:hover{
-    color: orange;
+    color: red;
     transform: scale(1.1);
   }
 
