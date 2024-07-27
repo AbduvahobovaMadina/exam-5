@@ -17,28 +17,28 @@ function createContent(data) {
   console.log(data);
   content.innerHTML = `
      <div class="content__img">
-                    <img src="${data.images[0]}" alt="">
-                    ${data.images.map(
-                      (item) => ( `<img class="little" width="80" src=${item} alt=""></img>`
-                    ))
+                ${data.images.map(
+                  (item) => ( `<img class="little" width="80" src=${item} alt=""></img>`
+                  ))
                   }
+                      <img class="big" src="${data.images[0]}" alt="">
                 </div>
                 <div class="context">
-                    <h2>Havic HV G-92 Gamepad</h2>
+                    <h2>${data.title}</h2>
                     <div class="rating">
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #f0ece0;"></i>
-                        <p>(150 Reviews)</p>
+                        <p>${data.rating}</p>
                         <p>|</p>
                         <p class="green">In Stock</p>
                     </div>
-                    <h2>$192.00</h2>
-                    <p>PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
+                    <h2>${data.price}</h2>
+                    <p>${data.description}</p>
                     <hr>
-                    <h3>Colours: <div></div></h3>
+                    <h3>Colours: <div class="blue"></div> <div class="red"></div></h3>
                     <div class="sizes">
                         Size:
                         <div class="size">X</div>
