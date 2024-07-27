@@ -1,0 +1,218 @@
+.product{
+    margin-bottom: 160px;
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+.content{
+    display: flex;
+    // border: 2px solid red;
+    width: 100%;
+    height: 600px;
+    &__img{
+        width: 50%;
+        margin-top: 100px;
+
+        img{
+            height: 460px;
+
+        }
+    }
+    .context{
+        width: 40%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: sans-serif;
+        .rating{
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            p{
+                color: gray;
+            }
+            .green{
+                color: greenyellow;
+            }
+        }
+        h3{
+            font-weight: 600;
+            display: flex;
+            gap: 30px;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 850px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: blue;
+                border: 1px soli #ddd;
+                cursor: pointer;
+                
+            }
+            div{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: red;
+            }
+           
+        }
+        .sizes{
+            display: flex;
+            gap: 10px;
+            .size{
+                width: 30px;
+                height: 20px;
+                border: 1px solid #ddd;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background: red;
+                    color: #fff;
+                }
+            }
+        }
+        .how__many{
+            display: flex;
+            .plus{
+                width: 40px;
+                height: 20px;
+                border: 1px solid #ddd;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background: red;
+                    color: #fff;
+                }
+            }
+            .son{
+                width: 70px;
+                text-align: center;
+                height: 20px;
+                border: 1px solid #ddd;
+               
+            }
+            button{
+                width: 100px;
+                height: 20px;
+                background: red;
+                border: none;
+                color: #fff;
+                margin-left: 30px;
+                margin-right: 20px;
+            }
+        }
+        .delivery{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 150px;
+            border: none;
+            .free{
+                padding: 20px;
+                display: flex;
+                gap: 20px;
+                border: 2px solid #ddd;
+                img{
+                    width: 50px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+.seemore{
+    margin-left: 33%;
+    background: orange;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.collection {
+    display: flex;
+    list-style: none;
+    overflow: auto;
+    padding: 10px 50px;
+    gap: 20px;
+    cursor: pointer;
+    /* font-size: 19px; */
+  }
+  .collection li{
+    width: 200px;
+    padding: 7px;
+    border: 1px solid #0002;
+    border-radius: 6px;
+  }
+  .item{
+    white-space: nowrap;
+    transition: .3s;
+  }
+  .item:hover{
+    color: orange;
+    transform: scale(1.1);
+  }
+
+
+.skeleton{
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skeleton__item{
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: .3s;
+}
+.skeleton__image{
+    width: 100%;
+    height: 250px;
+    background: #ddd;
+    border-radius: 14px;
+}
+.skeleton__line{
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    border-radius: 6px;
+}
+.skeleton__line:nth-child(3){
+    width: 80%;
+}
+.skeleton__line:nth-child(4){
+    width: 60%;
+}
+.skeleton__anime{
+    background: linear-gradient(90deg,#ddd,#f7f7f7,#ddd);
+    background-size: 200%;
+    animation: skeleton .7s linear 0s infinite;
+}
+@keyframes skeleton {
+    to{
+        background-position: 200%;
+    }
+}
+

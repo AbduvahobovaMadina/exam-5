@@ -1,0 +1,106 @@
+.service{
+    margin-top: 50px;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    &__card{
+        align-items: center;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+
+
+.card{
+    width: 300px;
+    font-family: sans-serif;
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    .buy{
+        background: greenyellow;
+        width: 100px;
+        height: 30px;
+        transform: translateY(60px);
+        
+    }
+        .img{
+            border-radius: 5px;
+            width: 300px;
+            height: 300px;
+            background: #ddd;
+            align-items: center;
+            padding: 30px;
+            img{
+                width: 100%;
+                transition: .5s;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+       
+        h3{
+            margin-top: -50px;
+        }
+        p{
+            color: gray;
+        }
+        .icons{
+            
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+            left: 220px;
+            top: -270px;
+            i{
+                transition: .3s;
+                padding: 7px;
+                width: 30px;
+                height: 30px;
+                background: #fff9;
+                border-radius: 50%;
+                &:hover{
+                    background: #DB4444;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+        button{
+            background: black;
+            height: 38px;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            transition: .5s;
+            &:hover{
+                opacity: 1;
+                transform: translateY(-50px);
+                height: 38px;
+            }
+        }
+               
+    .price{
+        display: flex;
+        gap: 7px;
+        h4{
+            color: #DB4444;
+        }
+       
+    }
+}
